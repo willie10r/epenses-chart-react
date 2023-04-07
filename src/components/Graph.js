@@ -4,7 +4,7 @@ import '../App.css';
 
 const Graph = () => {
     return (
-        <main>
+        <main className='con-2'>
             <section className='graph'>
                 <h2 className='gr-title'>
                     Spending - Last 7 days
