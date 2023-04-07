@@ -20,13 +20,13 @@ const Graph = () => {
                 </ul>
             </section>
             <section className='months'>
-                <div className='months-totle'>
-                    <h3>Totle this month</h3>
-                    <a>$478.33</a>
+                <div className='months-total'>
+                    <h3 className='total-month'>Total this month</h3>
+                    <a className='total'>$478.33</a>
                 </div>
-                <div className='apr'>
-                    <h3>+2.4%</h3>
-                    <a>from last month</a>
+                <div className='apr-area'>
+                    <h3 className='apr'>+2.4%</h3>
+                    <a className='apr-month'>from last month</a>
                 </div>
             </section>
         </main>

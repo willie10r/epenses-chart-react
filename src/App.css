@@ -1,6 +1,7 @@
 body {
     background-color: hsl(27, 66%, 92%);
     color: hsl(25, 47%, 15%);
+    font-family: 'DM Sans', sans-serif;
 }
 
 .con-1 {
@@ -15,30 +16,51 @@ body {
 }
 
 .ch-1 {
+  color: hsl(33, 100%, 98%);
+  margin:15px auto auto 25px;
+
 
 }
+.bal-title {
+ margin: 5px;
+ font-weight:300;
+ font-size: 15px;
+}
+.bal-money {
+  margin-top: 10px;
+  font-weight:600;
+  font-size: 25px;
+}
 .ch-2 {
+  margin: 10px 0px auto auto;
 
 }
 .dot-1 {
-    height: 23px;
-    width: 23px;
+    height: 30px;
+    width: 30px;
     border-width: 2px;
-    border-color: gray;
+    border-color: hsl(33, 100%, 98%);
     border-style: solid;
     border-radius: 50%;
     display: inline-block;
+    position: absolute;
+    top: 70px;
+    right: 55px;
+    z-index: 10;
+
   }
   .dot-2 {
-    height: 25px;
-    width: 25px;
+    height: 34px;
+    width: 34px;
+    opacity: 0.8;
     background-color: black;
     border-radius: 50%;
     display: inline-block;
+    margin-right: 20px;
   }
+
   .con-2 {
     background-color:hsl(33, 100%, 98%);
-    height: 385px;
     border-radius: 10px;
     margin: 0px 5px auto 5px;
 }
@@ -50,4 +72,25 @@ body {
     justify-content: space-between;
     border-top: solid hsl(27, 66%, 92%) 2px;
     margin: 0px 20px auto 20px;
+    height: 125px;
+  }
+  .months-total {
+  
+  }
+  .total-month {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 45px auto 5px 0px;
+  }
+  .total {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .apr-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+  }
+  .apr {
+    margin: 60px 0px 0px auto;
   }
