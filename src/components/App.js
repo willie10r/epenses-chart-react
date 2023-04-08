@@ -4,14 +4,15 @@ import { ReactDOM } from 'react-dom';
 import '../App.css';
 
 
+
 import Account from './Account';
 import Graph from './Graph';
 
 const App = () => {
   return (
     <>
-      <Account></Account>
-      <Graph></Graph>
+      <Account />
+      <Graph />
     </>
   );
 }

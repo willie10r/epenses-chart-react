@@ -1,6 +1,38 @@
 import React from 'react';
 import { ReactDOM } from 'react-dom';
 import '../App.css';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+
+const data = [
+    {
+        "day": "mon",
+        "amount": 17.45
+    },
+    {
+        "day": "tue",
+        "amount": 34.91
+    },
+    {
+        "day": "wed",
+        "amount": 52.36
+    },
+    {
+        "day": "thu",
+        "amount": 31.07
+    },
+    {
+        "day": "fri",
+        "amount": 23.39
+    },
+    {
+        "day": "sat",
+        "amount": 43.28
+    },
+    {
+        "day": "sun",
+        "amount": 25.48
+    }
+]
 
 const Graph = () => {
     return (
@@ -9,18 +41,15 @@ const Graph = () => {
                 <h2 className='gr-title'>
                     Spending - Last 7 days
                 </h2>
-                <ul>
-                    <li>mon</li>
-                    <li>tue</li>
-                    <li>wed</li>
-                    <li>thu</li>
-                    <li>fri</li>
-                    <li>sat</li>
-                    <li>sun</li>
-                </ul>
             </section>
+            <BarChart width={350} height={400} data={data}>
+                <XAxis dataKey="day" stroke="#555" />
+                <Tooltip label={'amount'} />
+                <Bar dataKey="amount" fill="hsl(10, 79%, 65%)" radius={[5, 5, 0, 0]} cursor={{ fill: 'hsl(186, 34%, 60%)' }} />
+            </BarChart>
             <section className='months'>
-                <div className='months-total'>
+
+                <div>
                     <h3 className='total-month'>Total this month</h3>
                     <a className='total'>$478.33</a>
                 </div>
